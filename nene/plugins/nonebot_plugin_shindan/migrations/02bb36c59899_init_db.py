@@ -1,10 +1,11 @@
 """init_db
 
 Revision ID: 02bb36c59899
-Revises: 
+Revises:
 Create Date: 2023-02-01 16:13:45.941344
 
 """
+
 import sqlalchemy as sa
 from alembic import op
 
@@ -42,7 +43,9 @@ def set_default_value():
             title="你的二次元少女化形象",
             mode="image",
         ),
-        ShindanRecord(shindan_id="917962", command="人设生成", title="人设生成器", mode="image"),
+        ShindanRecord(
+            shindan_id="917962", command="人设生成", title="人设生成器", mode="image"
+        ),
         ShindanRecord(
             shindan_id="790697",
             command="中二称号",
